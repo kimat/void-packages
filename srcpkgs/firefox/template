@@ -2,6 +2,7 @@
 #
 # THIS PKG MUST BE SYNCHRONIZED WITH "srcpkgs/firefox-i18n".
 #
+
 pkgname=firefox
 version=60.0.1
 revision=1
