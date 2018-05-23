@@ -29,7 +29,9 @@ before_script:
     - common/travis/bootstrap.sh $BOOTSTRAP
 
 script:
-    - "travis_wait 20 sleep 1200 &"
+    - "(sleep 500 ; echo 'wakeup') &"
+    - "(sleep 1100 ; echo 'wakeup') &"
+    - "(sleep 1700 ; echo 'wakeup') &"
     - common/travis/build.sh $BOOTSTRAP $ARCH
 
 after_script:
