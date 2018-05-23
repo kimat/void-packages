@@ -17,7 +17,7 @@ checksum=91d9f6b01770fa3e9ac4da306bbe95eae56819f13cc77668d7dd1ed2874b60b5
 nocross=yes
 
 do_build() {
-	cargo build --release ${makejobs} -vv
+	cargo build --release ${makejobs}
 }
 
 do_install() {
